@@ -1,0 +1,13 @@
+package stu.napls.napurity;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class NapurityApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(NapurityApplication.class, args);
+    }
+
+}
