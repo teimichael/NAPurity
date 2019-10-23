@@ -15,7 +15,7 @@ router.beforeEach((to, from, next) => {
       next({ path: '/' })
       NProgress.done() // if current page is dashboard will not trigger	afterEach hook, so manually handle it
     } else {
-      if (store.getters.roles.length === 0) {
+      if (store.getters.account.id === undefined) {
         store.dispatch('GetInfo').then(res => {
           next()
         }).catch((err) => {
