@@ -16,7 +16,7 @@ public class User {
     @Column(name = "name")
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name="adminId")
-    private Admin admin;
+    @Column(name = "role")
+    private String role;
+
 }

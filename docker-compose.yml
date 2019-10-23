@@ -1,5 +1,14 @@
 version: '3'
 services:
+  app:
+    container_name: napurity-app
+    build:
+      context: .
+      dockerfile: app-dockerfile
+    ports:
+      - 8081:80
+    depends_on:
+      - web
   web:
     container_name: napurity-web
     environment:
@@ -14,16 +23,6 @@ services:
     depends_on:
       - mysql
     command: mvn clean spring-boot:run -Dspring-boot.run.profiles=prod
-  nginx:
-    container_name: napurity-nginx
-    restart: always
-    build:
-      context: .
-      dockerfile: nginx-dockerfile
-    ports:
-      - 80:80
-    depends_on:
-      - web
   mysql:
     container_name: napurity-mysql
     image: mysql:latest
@@ -35,3 +34,14 @@ services:
       - 3306:3306
     restart: always
     command: mysqld --lower_case_table_names=1 --skip-ssl --character_set_server=utf8mb4 --explicit_defaults_for_timestamp
+  nginx:
+    container_name: napurity-nginx
+    restart: always
+    build:
+      context: .
+      dockerfile: nginx-dockerfile
+    ports:
+      - 80:80
+    depends_on:
+      - app
+      - web

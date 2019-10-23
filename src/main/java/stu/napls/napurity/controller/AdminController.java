@@ -30,11 +30,7 @@ public class AdminController {
     public Admin create() {
         Admin admin = new Admin();
         admin.setPrivilege("super root");
-        User user = new User();
-        user.setName("dyp");
-        Set<User> set = new HashSet<>();
-        set.add(user);
-        admin.setUsers(set);
+
         return adminService.createAdmin(admin);
     }
 }

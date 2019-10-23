@@ -3,7 +3,6 @@ package stu.napls.napurity.model;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity
 @Table(name = "admin")
@@ -16,7 +15,7 @@ public class Admin {
     @Column(name = "privilege")
     private String privilege;
 
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    @JoinColumn(name = "userId", referencedColumnName = "id")
-    private Set<User> users;
+    @ManyToOne
+    @JoinColumn(name="loginId")
+    private Login login;
 }

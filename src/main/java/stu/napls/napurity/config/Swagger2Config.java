@@ -1,4 +1,4 @@
-package stu.napls.napurity;
+package stu.napls.napurity.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

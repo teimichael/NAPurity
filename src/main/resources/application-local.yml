@@ -3,3 +3,6 @@ spring:
     url: jdbc:mysql://localhost:3306/napurity?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
     username: root
     password: mysql
+
+cors:
+  front-app-url: http://localhost:9528
