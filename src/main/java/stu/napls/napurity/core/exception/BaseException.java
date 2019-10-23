@@ -1,4 +1,4 @@
-package stu.napls.napurity.exception;
+package stu.napls.napurity.core.exception;
 
 public class BaseException extends RuntimeException {
     public BaseException(String message) {

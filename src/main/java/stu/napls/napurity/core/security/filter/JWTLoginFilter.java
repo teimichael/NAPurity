@@ -11,7 +11,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import stu.napls.napurity.config.GlobalConstantKey;
 import stu.napls.napurity.core.security.model.LoginParam;
-import stu.napls.napurity.core.security.response.Response;
+import stu.napls.napurity.core.response.Response;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

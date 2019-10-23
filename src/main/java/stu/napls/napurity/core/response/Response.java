@@ -1,6 +1,6 @@
-package stu.napls.napurity.core.security.response;
+package stu.napls.napurity.core.response;
 
-import stu.napls.napurity.core.security.constant.Code;
+import stu.napls.napurity.core.constant.Code;
 
 import java.io.Serializable;
 

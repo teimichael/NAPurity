@@ -1,4 +1,4 @@
-package stu.napls.napurity.exception;
+package stu.napls.napurity.core.exception;
 
 public class TokenException extends BaseException {
 

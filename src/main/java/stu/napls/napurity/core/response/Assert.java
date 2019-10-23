@@ -1,10 +1,10 @@
-package stu.napls.napurity.core.security.response;
+package stu.napls.napurity.core.response;
 
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
-import stu.napls.napurity.core.security.constant.Code;
-import stu.napls.napurity.exception.SystemException;
+import stu.napls.napurity.core.constant.Code;
+import stu.napls.napurity.core.exception.SystemException;
 
 import java.util.Collection;
 import java.util.Map;

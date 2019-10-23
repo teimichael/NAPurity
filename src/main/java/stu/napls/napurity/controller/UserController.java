@@ -2,8 +2,8 @@ package stu.napls.napurity.controller;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-import stu.napls.napurity.core.security.constant.Role;
-import stu.napls.napurity.core.security.response.Response;
+import stu.napls.napurity.core.constant.Role;
+import stu.napls.napurity.core.response.Response;
 import stu.napls.napurity.model.Login;
 import stu.napls.napurity.model.User;
 import stu.napls.napurity.repository.LoginRepository;

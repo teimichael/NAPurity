@@ -1,4 +1,4 @@
-package stu.napls.napurity.core.security.constant;
+package stu.napls.napurity.core.constant;
 
 public interface Code {
     int SUCCESS = 200;
